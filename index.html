@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript website Recap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-8">Functional Your <span class="font-medium text-green-600">Bank Website</span> !!!</h1>
+    </header>
+    <main>
+        <!-- balance and tranzation summary -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+                <div class="bg-gray-700 p-8 rounded-md">
+                    <h2 class="text-3xl">Deposit</h2>
+                    <h4 class="text-4xl">$<span id="deposit-tatal">00</span></h4>
+                </div>
+                <div class="bg-green-700 p-8 rounded-md">
+                    <h2 class="text-3xl">Withdrow</h2>
+                    <h4 class="text-4xl">$<span id="withdrow-tatal">00</span></h4>
+                </div>
+                <div class="bg-blue-700 p-8 rounded-md">
+                    <h2 class="text-3xl">Balance</h2>
+                    <h4 class="text-4xl">$<span id="Balance-tatal">1200</span></h4>
+                </div>
+            </div>
+        </section>
+        <!-- deposit banck account -->
+        <section class="mt-8 w-3/4 mx-auto">
+            <div class="grid grid-cols-2 gap-4 ">
+                <div class="bg-emerald-400 p-8 rounded-md">
+                    <h3 class="text-4xl mb-4">your deposit</h3>
+                    <input class="px-4 py-3 w-3/4 rounded-md block" id="deposit-field" type="text" placeholder="$ Amount your Deposit account Balance ">
+                    <button id="btn-deposit" class="bg-blue-800 text-2xl px-6 py-2 text-white rounded-lg mt-4 hover:bg-sky-700 ">Deposit</button>
+                </div>
+                <div class="bg-lime-600 p-8 rounded-md">
+                    <h3 class="text-4xl mb-4">Withdrow</h3>
+                    <input id="widthdrow-field" class="px-4 py-3 w-3/4 rounded-md block" type="text" placeholder="$ Amount your Deposit account Balance ">
+                    <button id="btn-Withdrow" class="bg-blue-800 text-2xl px-6 py-2 text-white rounded-lg mt-4 hover:bg-sky-700 ">Deposit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js-script/deposit.js"></script>
+    <script src="js-script/widthdrow.js"></script>
+</body>
+</html>
